@@ -26,7 +26,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
 
             const converted = amount / rate
 
-            descriptionElement.textContent = `1 ${currency} = R$ ${(1 / rate).toFixed(2).replace(".", ",")}`
+            descriptionElement.textContent = `1 ${currency} = R$ ${(1 / rate).toFixed(4).replace(".", ",")}`
             resultElement.textContent = `${converted.toFixed(2).replace(".", ",")} Reais`
             footer.classList.add("show-result")
         })
